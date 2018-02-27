@@ -9,7 +9,8 @@ public class Index{
     System.out.println();
     System.out.println("1. Break");
     System.out.println("2. Switch");
-    System.out.println("3. Exit");
+    System.out.println("3. methods");
+    System.out.println("4. Exit");
 
     System.out.println();
 

@@ -5,7 +5,7 @@ public class Sales{
 
 		double total = 0;
 		int productId;
-		//int quantity sold;
+
 
 		System.out.print("Eneter product number");
 		productId = input.nextInt();
@@ -13,7 +13,7 @@ public class Sales{
 		while(productId != 0){
 		System.out.print("Eneter quantity sold");
 		int quantity = input.nextInt();
-
+       if(productId >= 1 && productId<=5){
 		switch(productId){
 			case 1:
 			 total += quantity * 2.98;
@@ -31,11 +31,14 @@ public class Sales{
 			 total += quantity *  6.87;
 			 break;
 		}
-	}else if(productId != 0)
+	}else
 		System.out.println("ProductId must be 1 to 5");
 
-	System.out.println("Eneter product number (0 to stop)");
+	System.out.println("Eneter product number (0 to stop): ");
+	productId = input.nextInt();
 	}
 	System.out.print("Total products sold is: ");
-	System.out.println(Math.round (total*10000.0/10000.0));
+	System.out.println(Math.round ((total*10000.0)/10000.0));
+ }
+
 }
