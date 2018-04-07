@@ -5,8 +5,8 @@ public class Index{
   public static void main(String[] args){
     Scanner input = new Scanner(System.in);
 
-    System.out.println("Select an option (1-3):");
-    System.out.println();
+    System.out.println("Select an option (1-14):\n");
+
     System.out.println("1. Break");
     System.out.println("2. Switch");
     System.out.println("3. methods");
